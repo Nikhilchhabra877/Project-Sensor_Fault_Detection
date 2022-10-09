@@ -1,8 +1,8 @@
 # tcl pkg-config source file
 
-prefix=/Users/nikhil/Downloads/kafka/ml-data-pipeline/venv
-exec_prefix=/Users/nikhil/Downloads/kafka/ml-data-pipeline/venv
-libdir=/Users/nikhil/Downloads/kafka/ml-data-pipeline/venv/lib
+prefix=/Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv
+exec_prefix=/Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv
+libdir=/Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv/lib
 includedir=${prefix}/include
 
 Name: Tool Command Language

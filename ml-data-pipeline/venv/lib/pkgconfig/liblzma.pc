@@ -5,10 +5,10 @@
 # You can do whatever you want with this file.
 #
 
-prefix=/Users/nikhil/Downloads/kafka/ml-data-pipeline/venv
-exec_prefix=/Users/nikhil/Downloads/kafka/ml-data-pipeline/venv
-libdir=/Users/nikhil/Downloads/kafka/ml-data-pipeline/venv/lib
-includedir=/Users/nikhil/Downloads/kafka/ml-data-pipeline/venv/include
+prefix=/Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv
+exec_prefix=/Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv
+libdir=/Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv/lib
+includedir=/Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv/include
 
 Name: liblzma
 Description: General purpose data compression library

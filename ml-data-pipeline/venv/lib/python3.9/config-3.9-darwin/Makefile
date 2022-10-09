@@ -81,7 +81,7 @@ MAKESETUP=      $(srcdir)/Modules/makesetup
 OPT=		-DNDEBUG -fwrapv -O2 -Wall
 BASECFLAGS=	 -Wno-unused-result -Wsign-compare -Wunreachable-code
 BASECPPFLAGS=	-IObjects -IInclude -IPython
-CONFIGURE_CFLAGS=	-isysroot /Applications/Xcode_12.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -isystem /Users/nikhil/Downloads/kafka/ml-data-pipeline/venv/include -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/python-split_1606376618783/work=/usr/local/src/conda/python-3.9.0 -fdebug-prefix-map=/Users/nikhil/Downloads/kafka/ml-data-pipeline/venv=/usr/local/src/conda-prefix -arch arm64 
+CONFIGURE_CFLAGS=	-isysroot /Applications/Xcode_12.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -isystem /Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv/include -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/python-split_1606376618783/work=/usr/local/src/conda/python-3.9.0 -fdebug-prefix-map=/Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv=/usr/local/src/conda-prefix -arch arm64 
 # CFLAGS_NODIST is used for building the interpreter and stdlib C extensions.
 # Use it when a compiler flag should _not_ be part of the distutils CFLAGS
 # once Python is installed (Issue #21121).
@@ -90,8 +90,8 @@ CONFIGURE_CFLAGS_NODIST=  -Wl,-export_dynamic -g -std=c99 -Wextra -Wno-unused-re
 # Use it when a linker flag should _not_ be part of the distutils LDFLAGS
 # once Python is installed (bpo-35257)
 CONFIGURE_LDFLAGS_NODIST=  -Wl,-export_dynamic -g
-CONFIGURE_CPPFLAGS=	-isysroot /Applications/Xcode_12.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -D_FORTIFY_SOURCE=2 -isystem /Users/nikhil/Downloads/kafka/ml-data-pipeline/venv/include -mmacosx-version-min=11.0 -I/Users/nikhil/Downloads/kafka/ml-data-pipeline/venv/include
-CONFIGURE_LDFLAGS=	-isysroot /Applications/Xcode_12.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/nikhil/Downloads/kafka/ml-data-pipeline/venv/lib -L/Users/nikhil/Downloads/kafka/ml-data-pipeline/venv/lib
+CONFIGURE_CPPFLAGS=	-isysroot /Applications/Xcode_12.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -D_FORTIFY_SOURCE=2 -isystem /Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv/include -mmacosx-version-min=11.0 -I/Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv/include
+CONFIGURE_LDFLAGS=	-isysroot /Applications/Xcode_12.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv/lib -L/Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv/lib
 # Avoid assigning CFLAGS, LDFLAGS, etc. so users can use them on the
 # command line to append to these values without stomping the pre-set
 # values.
@@ -130,7 +130,7 @@ MULTIARCH=	darwin
 MULTIARCH_CPPFLAGS = -DMULTIARCH=\"darwin\"
 
 # Install prefix for architecture-independent files
-prefix=		/Users/nikhil/Downloads/kafka/ml-data-pipeline/venv
+prefix=		/Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv
 
 # Install prefix for architecture-dependent files
 exec_prefix=	${prefix}
@@ -198,12 +198,12 @@ RUNSHARED=
 ENSUREPIP=      no
 
 # OpenSSL options for setup.py so sysconfig can pick up AC_SUBST() vars.
-OPENSSL_INCLUDES=-I/Users/nikhil/Downloads/kafka/ml-data-pipeline/venv/include
+OPENSSL_INCLUDES=-I/Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv/include
 OPENSSL_LIBS=-lssl -lcrypto
-OPENSSL_LDFLAGS=-L/Users/nikhil/Downloads/kafka/ml-data-pipeline/venv/lib
+OPENSSL_LDFLAGS=-L/Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv/lib
 
 # Default zoneinfo.TZPATH. Added here to expose it in sysconfig.get_config_var
-TZPATH=/Users/nikhil/Downloads/kafka/ml-data-pipeline/venv/share/zoneinfo
+TZPATH=/Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv/share/zoneinfo
 
 # Modes for directories, executables and data files created by the
 # install process.  Default to user-only-writable for all file types.
@@ -212,7 +212,7 @@ EXEMODE=	755
 FILEMODE=	644
 
 # configure script arguments
-CONFIG_ARGS=	 '--prefix=/Users/nikhil/Downloads/kafka/ml-data-pipeline/venv' '--build=x86_64-apple-darwin13.4.0' '--host=arm64-apple-darwin20.0.0' '--enable-ipv6' '--with-ensurepip=no' '--with-tzpath=/Users/nikhil/Downloads/kafka/ml-data-pipeline/venv/share/zoneinfo' '--with-computed-gotos' '--with-system-ffi' '--enable-loadable-sqlite-extensions' '--with-tcltk-includes=-I/Users/nikhil/Downloads/kafka/ml-data-pipeline/venv/include' '--with-tcltk-libs=-L/Users/nikhil/Downloads/kafka/ml-data-pipeline/venv/lib -ltcl8.6 -ltk8.6' '--with-platlibdir=lib' '--with-lto' '-oldincludedir=/Users/runner/miniforge3/conda-bld/python-split_1606376618783/_build_env/arm64-apple-darwin20.0.0/sysroot/usr/include' '--disable-shared' 'build_alias=x86_64-apple-darwin13.4.0' 'host_alias=arm64-apple-darwin20.0.0' 'MACHDEP=darwin' 'CC=arm64-apple-darwin20.0.0-clang' 'CFLAGS=-isysroot /Applications/Xcode_12.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -isystem /Users/nikhil/Downloads/kafka/ml-data-pipeline/venv/include -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/python-split_1606376618783/work=/usr/local/src/conda/python-3.9.0 -fdebug-prefix-map=/Users/nikhil/Downloads/kafka/ml-data-pipeline/venv=/usr/local/src/conda-prefix -arch arm64 ' 'LDFLAGS=-isysroot /Applications/Xcode_12.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/nikhil/Downloads/kafka/ml-data-pipeline/venv/lib -L/Users/nikhil/Downloads/kafka/ml-data-pipeline/venv/lib' 'CPPFLAGS=-isysroot /Applications/Xcode_12.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -D_FORTIFY_SOURCE=2 -isystem /Users/nikhil/Downloads/kafka/ml-data-pipeline/venv/include -mmacosx-version-min=11.0 -I/Users/nikhil/Downloads/kafka/ml-data-pipeline/venv/include' 'PKG_CONFIG_PATH=/Users/nikhil/Downloads/kafka/ml-data-pipeline/venv/lib/pkgconfig'
+CONFIG_ARGS=	 '--prefix=/Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv' '--build=x86_64-apple-darwin13.4.0' '--host=arm64-apple-darwin20.0.0' '--enable-ipv6' '--with-ensurepip=no' '--with-tzpath=/Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv/share/zoneinfo' '--with-computed-gotos' '--with-system-ffi' '--enable-loadable-sqlite-extensions' '--with-tcltk-includes=-I/Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv/include' '--with-tcltk-libs=-L/Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv/lib -ltcl8.6 -ltk8.6' '--with-platlibdir=lib' '--with-lto' '-oldincludedir=/Users/runner/miniforge3/conda-bld/python-split_1606376618783/_build_env/arm64-apple-darwin20.0.0/sysroot/usr/include' '--disable-shared' 'build_alias=x86_64-apple-darwin13.4.0' 'host_alias=arm64-apple-darwin20.0.0' 'MACHDEP=darwin' 'CC=arm64-apple-darwin20.0.0-clang' 'CFLAGS=-isysroot /Applications/Xcode_12.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -isystem /Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv/include -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/python-split_1606376618783/work=/usr/local/src/conda/python-3.9.0 -fdebug-prefix-map=/Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv=/usr/local/src/conda-prefix -arch arm64 ' 'LDFLAGS=-isysroot /Applications/Xcode_12.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv/lib -L/Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv/lib' 'CPPFLAGS=-isysroot /Applications/Xcode_12.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -D_FORTIFY_SOURCE=2 -isystem /Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv/include -mmacosx-version-min=11.0 -I/Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv/include' 'PKG_CONFIG_PATH=/Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv/lib/pkgconfig'
 
 
 # Subdirectories with code
@@ -261,8 +261,8 @@ BUILD_GNU_TYPE=	x86_64-apple-darwin13.4.0
 HOST_GNU_TYPE=	arm64-apple-darwin20.0.0
 
 # Tcl and Tk config info from --with-tcltk-includes and -libs options
-TCLTK_INCLUDES=	-I/Users/nikhil/Downloads/kafka/ml-data-pipeline/venv/include
-TCLTK_LIBS=	-L/Users/nikhil/Downloads/kafka/ml-data-pipeline/venv/lib -ltcl8.6 -ltk8.6
+TCLTK_INCLUDES=	-I/Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv/include
+TCLTK_LIBS=	-L/Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv/lib -ltcl8.6 -ltk8.6
 
 # The task to run while instrumented when building the profile-opt target.
 # To speed up profile generation, we don't run the full unit test suite
@@ -310,7 +310,7 @@ IO_OBJS=	\
 
 ##########################################################################
 
-LIBFFI_INCLUDEDIR=	/Users/nikhil/Downloads/kafka/ml-data-pipeline/venv/include
+LIBFFI_INCLUDEDIR=	/Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv/include
 
 ##########################################################################
 # Parser

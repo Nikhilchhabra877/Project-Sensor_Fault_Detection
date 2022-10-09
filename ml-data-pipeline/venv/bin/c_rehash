@@ -13,7 +13,7 @@
 # and add symbolic links to their hash values.
 
 my $dir = "";
-my $prefix = "/Users/nikhil/Downloads/kafka/ml-data-pipeline/venv";
+my $prefix = "/Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv";
 
 my $errorcount = 0;
 my $openssl = $ENV{OPENSSL} || "openssl";

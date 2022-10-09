@@ -1,8 +1,8 @@
-prefix=/Users/nikhil/Downloads/kafka/ml-data-pipeline/venv
+prefix=/Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 toolexeclibdir=${libdir}
-includedir=/Users/nikhil/Downloads/kafka/ml-data-pipeline/venv/include
+includedir=/Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv/include
 
 Name: libffi
 Description: Library supporting Foreign Function Interfaces

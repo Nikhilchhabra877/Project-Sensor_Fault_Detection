@@ -1,4 +1,4 @@
-#!/Users/nikhil/Downloads/kafka/ml-data-pipeline/venv/bin/python3.9
+#!/Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv/bin/python3.9
 # -*- python -*-
 
 # Keep this script in sync with python-config.sh.in

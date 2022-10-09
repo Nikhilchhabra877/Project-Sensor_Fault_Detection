@@ -1,4 +1,4 @@
-prefix=/Users/nikhil/Downloads/kafka/ml-data-pipeline/venv
+prefix=/Users/nikhil/Downloads/kafka/Project-Sensor_Fault_Detection/ml-data-pipeline/venv
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 sharedlibdir=${libdir}
