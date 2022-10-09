@@ -1,0 +1,51 @@
+{
+  "build": "h03a7124_4",
+  "build_number": 4,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "constrains": [
+    "zlib 1.2.12 *_4"
+  ],
+  "depends": [],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/libzlib-1.2.12-h03a7124_4",
+  "features": "",
+  "files": [
+    "lib/libz.1.2.12.dylib",
+    "lib/libz.1.dylib"
+  ],
+  "fn": "libzlib-1.2.12-h03a7124_4.tar.bz2",
+  "license": "Zlib",
+  "license_family": "Other",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/libzlib-1.2.12-h03a7124_4",
+    "type": 1
+  },
+  "md5": "5759e13a185245b658f3e4319bcae1b4",
+  "name": "libzlib",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/libzlib-1.2.12-h03a7124_4.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libz.1.2.12.dylib",
+        "path_type": "hardlink",
+        "sha256": "12c8505da5db212bd9506a855a7355744ff711b4a9c144be00e11c1cebcb63cc",
+        "sha256_in_prefix": "12c8505da5db212bd9506a855a7355744ff711b4a9c144be00e11c1cebcb63cc",
+        "size_in_bytes": 124000
+      },
+      {
+        "_path": "lib/libz.1.dylib",
+        "path_type": "softlink",
+        "sha256": "12c8505da5db212bd9506a855a7355744ff711b4a9c144be00e11c1cebcb63cc",
+        "size_in_bytes": 124000
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "09727ec881a473bff7dd1875c0815522ae3ad98831115d880448520fcb79f96e",
+  "size": 52009,
+  "subdir": "osx-arm64",
+  "timestamp": 1664827866656,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libzlib-1.2.12-h03a7124_4.tar.bz2",
+  "version": "1.2.12"
+}
